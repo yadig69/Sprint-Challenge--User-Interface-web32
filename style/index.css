@@ -167,29 +167,26 @@
     /** header, nav**/
     
     header {
+        padding: 5%;
         display: flex;
         justify-content: center;
     }
     
-    .nav-container {
-        padding: 20px;
-        width: 90%;
-        height: 50px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
+    img {
+        margin: 1.5% 1%;
     }
     
     .nav-bar {
+        padding-top: 5%;
         display: flex;
+        justify-content: flex-end;
+        background-color: #5f9ea0;
     }
     
     .nav-bar a {
-        margin-left: 2%;
-        padding: 20px 40px 20px 40px;
+        top: 10%;
+        margin-left: 5% 2%;
+        /* padding: 20px 40px 20px 40px; */
         font-size: 1.25rem;
         color: #171718;
         text-decoration: none;
@@ -198,11 +195,6 @@
     
     .nav-bar a:hover {
         color: #6a6a6d;
-    }
-    
-    .lambda-container {
-        margin-left: 5%;
-        padding: 5px 5px 5x 10px;
     }
     
     .jumbo-container {
@@ -229,7 +221,7 @@
     }
     
     .top-content .text-container {
-        width: 48%;
+        width: 45%;
         padding: 2% 7%;
         padding-bottom: 20px;
     }
@@ -241,7 +233,6 @@
     }
     
     .middle-content h2 {
-        padding: 0 2%;
         margin-bottom: 0;
         display: flex;
     }
@@ -319,10 +310,12 @@
     .bottom-content .text-container:last-child {
         padding-right: 0;
     }
+    /***  footer  ***/
     
     footer {
         width: 100%;
         background: black;
+        display: flex;
     }
     
     footer nav {
@@ -340,28 +333,9 @@
     }
     
     @media screen and (max-width: 800px) {
-        /* header {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        } */
-        .container {
-            width: 100%;
-            display: flex;
-        }
-        .nav-container {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
-        }
-        .nav-bar a {
+        .nav-bar {
             width: 60%;
-            display: flex;
-            justify-content: space-around;
-            flex-shrink: 0;
+            justify-content: space-between;
         }
         .jumbo-container .jumbo {
             width: 100%;
@@ -370,23 +344,24 @@
             align-self: flex-end;
         }
         .top-content {
-            padding: 10%;
-            display: flex;
+            width: 100%;
             flex-direction: column;
+            background-color: #00ffff6e;
         }
         .text-container {
-            width: 300px;
+            width: 70%;
         }
         .middle-content .boxes {
             justify-content: space-evenly;
-            background-color: #ffffff;
         }
         .middle-content .boxes .box {
-            width: 50%;
+            width: 35%;
             height: 200px;
             text-align: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        }
+        .bottom-content {
+            display: flex;
+            flex-wrap: nowrap;
         }
     }
     
