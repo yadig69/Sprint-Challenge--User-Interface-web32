@@ -156,7 +156,7 @@
     
     p,
     h2 {
-        margin: 5%;
+        margin: 1%;
         padding: 2%;
         line-height: 1.4;
     }
@@ -167,26 +167,24 @@
     /** header, nav**/
     
     header {
-        padding: 5%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     
     img {
-        margin: 1.5% 1%;
+        padding: 5%;
     }
     
     .nav-bar {
+        margin-right: 4%;
         padding-top: 5%;
         display: flex;
-        justify-content: flex-end;
-        background-color: #5f9ea0;
+        justify-content: flex-start;
     }
     
     .nav-bar a {
-        top: 10%;
-        margin-left: 5% 2%;
-        /* padding: 20px 40px 20px 40px; */
+        margin-left: 2%;
+        padding: 5% 4% 2% 4%x;
         font-size: 1.25rem;
         color: #171718;
         text-decoration: none;
@@ -221,8 +219,6 @@
     }
     
     .top-content .text-container {
-        width: 45%;
-        padding: 2% 7%;
         padding-bottom: 20px;
     }
     /*** boxes ***/
@@ -337,6 +333,9 @@
             width: 60%;
             justify-content: space-between;
         }
+        .nav-bar a {
+            font-size: 1rem;
+        }
         .jumbo-container .jumbo {
             width: 100%;
             justify-content: space-around;
@@ -346,10 +345,9 @@
         .top-content {
             width: 100%;
             flex-direction: column;
-            background-color: #00ffff6e;
         }
         .text-container {
-            width: 70%;
+            width: auto;
         }
         .middle-content .boxes {
             justify-content: space-evenly;
